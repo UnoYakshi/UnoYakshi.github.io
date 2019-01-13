@@ -12,7 +12,7 @@ Add P4’s repository
 `wget`
 
 # Download P4
-Sudo apt-get install helix-p4d
+`sudo apt-get install helix-p4d`
 
 # Configure P4
 The basic set-up can be done with the suggested 
