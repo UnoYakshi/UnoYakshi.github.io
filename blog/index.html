@@ -6,5 +6,9 @@ layout: default
 {% for post in site.posts %}
 	<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 	<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-	{{ post.text[:500] }}
-{% endfor %}
+	{% if entry.excerpt %}
+        	{{ post.excerpt | markdownify }}
+        <div class="more-link">
+          <a href="{{ post.url | relative_url }}">{{ site.data.text[site.locale].read_more | default: 'Read More' }}</a>
+        </div>
+      {% endif %}{% endfor %}
