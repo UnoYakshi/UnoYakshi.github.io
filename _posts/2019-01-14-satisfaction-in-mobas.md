@@ -1,5 +1,5 @@
 ---
-title: Satisfactions in MOBA-like games
+title: Satisfaction in MOBA-like games
 tags:
  - games
  - essay
