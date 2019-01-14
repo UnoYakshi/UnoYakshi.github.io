@@ -1,5 +1,4 @@
 theme: jekyll-theme-slate
 title: Will's
 email: uno.yakshi@gmail.com
-baseurl: "/blog"
 include: ['_pages']
