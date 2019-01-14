@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Will's
 email: uno.yakshi@gmail.com
+include: ['_pages']
