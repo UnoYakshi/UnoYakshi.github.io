@@ -4,10 +4,14 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 <time>{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+
+<!-- TAGS -->
+<br>
 {% for tag in page.tags %}
-{{ tag }} 
+<a href="google.com/{{ tag }}">{{ tag }}</a> 
 {% if tag != page.tags[-1] %}
 • 
 {% endif %}
 {% endfor %}
+
 {{ content }}
