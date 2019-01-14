@@ -4,7 +4,13 @@ title: About
 permalink: /about/
 ---
 
-About content goes here.
+Yo. Name's Will.
 
-* A list item
-* Another list item
+I shall share most of the thoughts, ideas, tutorials, etc. in this blog unti I come with a custom solution.
+
+What areas can you expect to see here:
+* Game Development
+* Programming
+* UX and UI
+* Poetry and Art
+* Socium
