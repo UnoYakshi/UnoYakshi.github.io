@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h4>blog</h4>
+<h4>Last Posts</h4>
 {% for post in site.posts %}
 	<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 	<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -11,4 +11,9 @@ layout: default
         <div class="more-link">
           <a href="{{ post.url | relative_url }}">{{ site.data.text[site.locale].read_more | default: 'Read More' }}</a>
         </div>
-      {% endif %}{% endfor %}
+      	{% endif %}
+	
+	{% if post != site.posts[-1] %}
+	<hr>
+	{% endif %}
+{% endfor %}
