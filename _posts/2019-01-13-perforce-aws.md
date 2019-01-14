@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Perforce Set-Up on AWS EC-2 Ubuntu
+tags:
+  - Amazon
+  - Perforce
+  - back-end
+  - tutorial
 excerpt: "In game development area, you probably have heard about Perforce (P4). Being in IT, you have also heard about Amazon's AWS/EC-2. Let us combine those two!"
 ---
 
