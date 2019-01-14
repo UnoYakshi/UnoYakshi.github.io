@@ -1,5 +1,8 @@
 ---
 title: Satisfactions in MOBA-like games
+tags:
+ - games
+ - essay
 excerpt: Playing MOBAs like DotA (1-2) or LoL, you probably notice that sometimes you aren't fulfilled with the game, while the other time you feel somewhat complete. What actually do affect a match satisfaction?
 ---
 
