@@ -1,3 +1,6 @@
 [submodule "themes/duckquill"]
 	path = themes/duckquill
 	url = https://codeberg.org/daudix/duckquill.git
+[submodule "themes/molly"]
+	path = themes/molly
+	url = git@github.com:timokratia/molly.git
