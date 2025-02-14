@@ -1,0 +1,8 @@
+<div class="epigraph">
+	<blockquote>
+		{{ body | markdown | safe }}
+		<footer>
+			<cite>{{ "― " ~ author | markdown | safe }}</cite>
+		</footer>
+	</blockquote>
+</div>
