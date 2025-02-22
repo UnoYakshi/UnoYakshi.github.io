@@ -1,4 +1,3 @@
-# The URL the site will be built for
 base_url = "https://yakshi.uno"
 
 compile_sass = true
@@ -7,7 +6,7 @@ generate_robots_txt = true
 generate_feeds = true
 
 theme = "duckquill"
-title = "UnoYakshi"
+title = "Uno Yakshi"
 description = "This is our home now"
 
 [markdown]
@@ -45,7 +44,6 @@ toc_sidebar = true
 styles = [
     "mods.css",
     "tufte.css",
-]
 ]
 
 [extra.nav]
