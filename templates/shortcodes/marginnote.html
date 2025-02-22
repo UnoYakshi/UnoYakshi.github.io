@@ -1,0 +1,8 @@
+<label class="margin-toggle" for="mn-{{uid}}">&#8853;</label>
+<input id="mn-{{uid}}" class="margin-toggle" type="checkbox" />
+
+{% if inline %}
+<span class="marginnote">{{- body | markdown(inline=true) | safe -}}</span>
+{% else %}
+</p><span class="marginnote">{{- body | markdown | safe -}}</span><p>
+{% endif %}
