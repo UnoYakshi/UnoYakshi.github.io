@@ -1,8 +1,8 @@
 +++
 title = "About"
 description = "About Uno Yakshi"
-#render = true
+draft = false
+weight = 10
 +++
 
-# This is a start
 Yes, and a good one!
