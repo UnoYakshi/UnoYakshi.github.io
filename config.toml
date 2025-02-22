@@ -23,14 +23,13 @@ smart_punctuation = true
 [search]
 include_title = true
 include_date = true
-# Whether to include the path of the page/section in the index (the permalink is always included)
-include_path = false
-# Whether to include the rendered content of the page/section in the index
+include_path = true
 include_content = true
-# Whether to include the description of the page/section in the index
 include_description = true
+index_format = "elasticlunr_javascript"
 
 [extra]
+hard_breaks = true
 default_theme = "dark"
 lang = "en"
 toc = true
