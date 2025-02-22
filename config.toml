@@ -1,13 +1,12 @@
 base_url = "https://yakshi.uno"
 
 compile_sass = true
-build_search_index = true
 generate_robots_txt = true
 generate_feeds = true
 
 theme = "duckquill"
 title = "Uno Yakshi"
-description = "This is our home now"
+description = "Uno Yakshi's personal web-site"
 
 [markdown]
 extra_syntaxes_and_themes = [
@@ -25,7 +24,6 @@ include_date = true
 include_path = true
 include_content = true
 include_description = true
-index_format = "elasticlunr_javascript"
 
 [extra]
 hard_breaks = true
@@ -35,9 +33,7 @@ accent_color_dark = "#808080"
 lang = "en"
 codeblock = true
 show_copy_button = true
-show_theme_switcher = true
 katex = true
-enable_search = true
 toc = true
 toc_sidebar = true
 
