@@ -11,9 +11,12 @@ title = "UnoYakshi"
 description = "This is our home now"
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+extra_syntaxes_and_themes = [
+    "highlight_themes",
+]
+
 highlight_code = true
+highlight_theme = "Darkula"
 render_emoji = true
 smart_punctuation = true
 
