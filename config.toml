@@ -48,7 +48,7 @@ styles = [
 
 [extra.nav]
 links = [
-    { url = "/", name = "Home" },
     { url = "/about", name = "About" },
-    { url = "/blog", name = "Blog" }
+    { url = "/blog", name = "Blog" },
+    { url = "/WHS_CV.pdf", name = "CV" },
 ]
