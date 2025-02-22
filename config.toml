@@ -34,6 +34,11 @@ default_theme = "dark"
 accent_color = "#dedede"
 accent_color_dark = "#808080"
 lang = "en"
+codeblock = true
+show_copy_button = true
+show_theme_switcher = true
+katex = true
+enable_search = true
 toc = true
 toc_sidebar = true
 
