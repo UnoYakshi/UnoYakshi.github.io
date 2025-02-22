@@ -1,12 +1,14 @@
 +++
 title = "Blog"
-description = "Uno Yakshi's Garden"
 sort_by = "date"
-template = "blog.html"
+template = "duckquill/templates/article_list.html"
 page_template = "blog-page.html"
 paginate_by = 5
+weight = 0
+
+[extra]
+toc = true
 +++
 
-# Intro
 Being a fan of Zettlekasten, I use Zettlr.
-Hence, I publish some of the finished notes and/or articles.
+Hence, I publish some of the finished notes and/or articles here.
