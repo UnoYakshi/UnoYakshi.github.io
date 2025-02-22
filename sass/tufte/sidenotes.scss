@@ -1,0 +1,134 @@
+/* Sidenotes, margin notes, figures, captions */
+@import "settings";
+
+img {
+  max-width: 100%;
+}
+
+.sidenote,
+.marginnote,
+{
+  float: right;
+  clear: right;
+  margin-right: -42%;
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.sidenote *,
+.marginnote *
+{
+  font-size: 0.8rem;
+  line-height: 1.2;
+  //padding: 10px;
+  margin: auto;
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+  font-family: et-book-roman-old-style;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sidenote-number:after {
+  content: counter(sidenote-counter);
+  font-size: 1rem;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+.sidenote:before {
+  content: counter(sidenote-counter) " ";
+  font-size: 1rem;
+  top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+  //margin-right: -82%;
+  min-width: 59%;
+  text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+  width: 100%;
+}
+
+div.table-wrapper {
+  overflow-x: auto;
+  font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  letter-spacing: .03em;
+}
+
+
+.fullwidth {
+  max-width: 90%;
+  clear: both;
+}
+
+span.newthought {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+input.margin-toggle {
+  display: none;
+}
+
+label.sidenote-number {
+  display: inline;
+}
+
+// It hiddens marginnote symbol...
+//label.margin-toggle:not(.sidenote-number) {
+//  display: none;
+//}
+
+
+@media (max-width: 760px) {
+  .sidenote,
+  .marginnote,
+  {
+    display: none;
+  }
+
+  label.margin-toggle {
+    color: $contrast-color;
+  }
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
+  .sidenote, .marginnote {
+    display: none;
+  }
+  span.sidenote > p {
+    //display: none;
+  }
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote,
+  .sidenote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    vertical-align: baseline;
+    position: relative;
+  }
+}

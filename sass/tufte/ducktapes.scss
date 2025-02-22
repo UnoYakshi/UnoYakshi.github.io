@@ -1,0 +1,49 @@
+#sidebar {
+  top: 5%;
+  width: 75%;
+  //height: 100vh;
+  //width: 45vh;
+
+  // Otherwise TOC will be displayed over images?..
+  //z-index: -1;
+}
+
+//body:has(#sidebar) {
+//  grid-template-areas:
+//          "nav     nav    nav     "
+//          "sidebar main   sidenote"
+//          "footer  footer footer  "
+//}
+
+pre.mermaid {
+  width: 100%;
+}
+
+//:root {
+//  --container-width: 1000px;
+//}
+
+//main,
+//#sidebar + main {
+//  //margin: 4.25rem auto 4rem;
+//  //width: 80%;
+//  //max-width: 90%;
+//  //width: min(var(--container-width), 90%);
+//}
+
+////$container-width: 1200px;
+
+button.colored {
+  border-color: #002b36;
+  border-style: solid;
+}
+pre table td:nth-of-type(1) {
+  text-align: center;
+  vertical-align: top;
+  user-select: none;
+  padding-left: 1rem;
+}
+
+pre table td:nth-of-type(2) > * {
+  padding-left: 1rem;
+}

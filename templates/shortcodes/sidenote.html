@@ -1,0 +1,9 @@
+<label class="margin-toggle sidenote-number" for="sn-{{uid}}"></label>
+<input id="sn-{{uid}}" class="margin-toggle" type="checkbox" />
+{% if inline %}
+<span class="sidenote">{{- body | markdown(inline=true) | safe -}}</span>
+{% else %}
+</p>
+<span class="sidenote">{{- body | markdown(inline=true) | safe -}}</span>
+<p>
+{% endif %}
