@@ -286,9 +286,11 @@ And the list goes here:
 
 ## Media
 
-### YouTube Embedded Iframe
+### [Invidious](https://invidious.io) {% sidenote(uid="invidious", inline=true) %}
+<abbr title="Free (Libre) and Open Source Software">FOSS</abbr> YouTube front-end with no telemetry from Big Tech.
+{% end %} Embedded Iframe
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OuoaKai_L00" frameborder="0" allowfullscreen></iframe>
+<iframe id='ivplayer' width='640' height='360' src='https://inv.nadeko.net/embed/43XaZEn2aLc?t=2864' style='border:none;'></iframe>
 
 <br>
 
