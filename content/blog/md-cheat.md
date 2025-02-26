@@ -296,8 +296,8 @@ And the list goes here:
 
 ### Image
 
-![Spectrocat](http://octodex.github.com/images/spectrocat.png)
-Image Source: [UNSPLASH](https://unsplash.com/photos/6g0KJWnBhxg)
+![Image](https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-5.jpg)
+Image Source: [WonderfulEngineering.com](https://wonderfulengineering.com/)
 
 {{ image(url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg", full_bleed=true) }}
 
