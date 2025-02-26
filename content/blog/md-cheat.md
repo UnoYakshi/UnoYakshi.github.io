@@ -9,11 +9,12 @@ author = "Uno Yakshi"
 [extra]
 toc = true
 toc_sidebar = true
+disclaimer = "This page is mostly for my own manual tests. It's public so others could use it, too."
 +++
 
-> This is Markdown Test/Cheatsheet for **Duckquill** (TODO: add link!) Zola theme and [Tufte-CSS](https://edwardtufte.github.io/tufte-css/).
+This is Markdown Test/Cheatsheet for [Duckquill](https://duckquill.daudix.one/) Zola theme and my buggy adaptaion of [Tufte-CSS](https://edwardtufte.github.io/tufte-css/).
 
-## Typography Elements
+# Typography Elements
 
 This is a paragraph. 
 
@@ -28,7 +29,7 @@ You can check  how fenced code block works in the [Code Blocks](#code-blocks) se
 
 This text is a [hyperlink](#) or [http://www.example.com](http://www.example.com).
 
-### Others
+## Others
 
 Markdown abbreviations:
 *[HTML]: Hypertext Markup Language
@@ -79,8 +80,8 @@ Quote with Markdown syntax:
 
 Quote with Zola shortcode:
 
-{% blockquote(author="Aristotle") %}
-The roots of education are _bitter_, but the fruit is sweet.
+{% blockquote(author="Daisaku Ikeda") %}
+The determination to win is the better part of winning.
 {% end %}
 
 {% blockquote(author="[Richard Stallman](https://stallman.org/cloudflare.html)") %}
@@ -125,6 +126,18 @@ setTimeout(function () { alert("JavaScript"); }, 1000);
 ```python, linenos
 test_var = 'Python syntax highlighting'
 print(test_var)
+
+for idx, val in range(len(test_var)):
+    print(f'{idx} :: {val}')  # Wrong highlighting!
+
+
+def is_it_cool() -> bool:
+    """
+    Some method docstring...
+    
+    :return: Until it is perfect, False!
+    """
+    return False
 ```
 
 ```shell, linenos, linenostart=1, hl_lines=3-4 8-9, hide_lines=2 7
