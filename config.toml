@@ -28,6 +28,7 @@ include_description = true
 [extra]
 hard_breaks = true
 default_theme = "dark"
+favicon = "favicon.png"
 accent_color = "#dedede"
 accent_color_dark = "#808080"
 lang = "en"
