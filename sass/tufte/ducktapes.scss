@@ -1,3 +1,5 @@
+@import "mixins";
+
 #sidebar {
   top: 5%;
   width: 75%;
@@ -46,4 +48,13 @@ pre table td:nth-of-type(1) {
 
 pre table td:nth-of-type(2) > span:nth-of-type(1) {
   padding-left: 1rem;
+}
+
+//Don't wrap ~~text~~ with some button'ish decorations, it is just text...
+del {
+  @include font-initial;
+  @include reset-font;
+  text-decoration: line-through;
+  opacity: 20%;
+  padding: 0 4px 0 4px;
 }

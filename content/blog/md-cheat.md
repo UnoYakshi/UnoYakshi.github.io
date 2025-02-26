@@ -20,9 +20,9 @@ This is a paragraph.
 
 **This text is bolded.** 
 
-_This text is italic._ 
+_Italiano!_ 
 
-We can  also **_combine_** them. 
+~~It was a dumb idea~~My decision was less than optimal.
 
 A highlighted inline code looks like `ThisIsMyCode()`.
 You can check  how fenced code block works in the [Code Blocks](#code-blocks) section.

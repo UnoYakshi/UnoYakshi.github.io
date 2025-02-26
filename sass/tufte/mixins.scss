@@ -1,0 +1,20 @@
+@import "settings";
+
+@mixin font-initial {
+  // Del, ins, etc...
+  background-color: initial;
+  box-shadow: initial;
+
+  // Headers...
+  font-style: initial;
+  font-weight: initial;
+  text-wrap: initial;
+  letter-spacing: initial;
+  font-family: initial;
+}
+
+@mixin reset-font {
+  color: $text-color;
+  font-family: $body-family;
+  font-size: inherit;
+}
