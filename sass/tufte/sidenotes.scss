@@ -8,6 +8,13 @@ img {
 .sidenote,
 .marginnote,
 {
+  // Ignore parents' settings to avoid inheriting Headers, etc...
+  all: initial;
+  // TODO: Should use @extend instead?..
+  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  background-color: $bg-color;
+  color: $text-color;
+
   float: right;
   clear: right;
   margin-right: -42%;
