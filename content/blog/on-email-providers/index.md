@@ -24,12 +24,19 @@ I decided to use [Posteo](https://posteo.de/en/) as an email-provider as it:
 - somewhat cares about ecology
 
 # Intro
-I've spent quite some time {{ sidenote(uid="time-spent", body="Ca. a full-time week.", inline=true) }} to compare several options when 
+{% blockquote(author="somebody, sometime, probably") %}
+The journey of thousand steps starts with a single stair or a single step. If you go up that is.
+{% end %}
+
+A few years back, I've decided to get better control of my own privacy, security, and anonymity.
+When came the moment of publicly exposing my website as a business card (I guess) and a little thoughts garden,
+I thought setting up a contacts page will be quite easy for a programmer with almost a decade of experience. 
+And then I've spent almost a full-time week to compare several options when 
 it came to email.{% sidenote(uid="self-hosted", inline=true) %}
 I've also considered running my own instance. Probably [Mailcow](https://mailcow.email/) or [Stalwart](https://stalw.art/).
 {% end %}
 Unfortunately, I'm not going to describe all the comparisons here, not as of now at least.
-However, I will gladly share my key takeaways and reasoning [for choosing Posteo].
+However, I will gladly share my key takeaways and reasoning for choosing [Posteo.de](https://posteo.de/).
 
 # Reasons
 If in 2025+ some people are still in doubt,
