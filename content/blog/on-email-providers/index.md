@@ -16,8 +16,8 @@ disclaimer = """ \
 +++
 
 # TL&DR
-I decided to use [Posteo](https://posteo.de/en/) as a email-provider as it:
-- allows to setup OpenPGP and S/MIME
+I decided to use [Posteo](https://posteo.de/en/) as an email-provider as it:
+- allows to set up OpenPGP and S/MIME
 - does most of the hard work for me
 - has a neat reputation in <abbr title="Privacy ― Security ― Anonymity">PSA</abbr> world
 - costs 1 €/month (and accepts cash)
@@ -36,12 +36,12 @@ If in 2025+ some people are still in doubt,
 I'm but to provide a few reasons why you should choose an email provider <abbr title="if and only if">iff</abbr>:
 - your infrastructural scale doesn't really scream for your own thing
 - your threat model allows it 
-  - and your tech savviness allows you can set up all the public-private-certificate shebang
+  - and your tech savviness allows you to set up all the public-private-certificate shebang
 - you are lazy and mortal
 
 ## Time
 The first reason I even considered email service providers is time itself.
-If I've spent a week just to compare 10+ services and tools, how much would it take to correctly setting it up?
+If I've spent a week just to compare 10+ services and tools, how much would it take to correctly set it up?
 Would there be no such services at all if it'd be so easy support one?
 In case you are a single individual (or a small team/family), you are better to go with a provider.
 I mean, most people already do it with Gmail, MS Outlook, Yahoo, Baidu, etc.
@@ -50,12 +50,12 @@ The only difference is, alas, that they don't care PSA.
 ## Complexity
 Speaking of "easy", it's not. Neither it's simple. There are a number of aspects you need to consider.
 For example:
-- have a reliable hosting [in data-center] or take care of your own infrastructure with 99.999+% availability
-- correctly setup all the policies:
+- have a reliable hosting [in a data-center] or take care of your own infrastructure with 99.999+% availability
+- correctly setup all the policies/methods:
 <abbr title="Sender Policy Framework">SPF</abbr>, 
 <abbr title="DomainKeys Identified Mail">DKIM</abbr>,
+<abbr title="Domain-based Message Authentication Reporting & Conformance">DMARC</abbr>,
 <abbr title="DNS-based Authentication of Named Entities">DANE</abbr>,
-<abbr title="Domain-based Message Authentication Reporting & Conformance">DMARC</abbr>
 - correctly setup <abbr title="End-to-End Encryption">E2EE</abbr>: 
 [Open]<abbr title="Pretty Good Privacy">PGP</abbr>,
 <abbr title="Secure/Multipurpose Internet Mail Extension">S/MIME</abbr>, etc.
@@ -99,7 +99,7 @@ The first drawback I've noticed (just right after paying for the service) that t
 It was odd, even considering it's just 1 euro/month. A few questions came to my mind nearly in an instant.
 
 1. Why would a commercial company refuse an extra ~~buck~~euro?
-2. How will I look in the IT/business community with `<username>@posteo.de` near my commits?
+2. How will I look in the IT/business community with `<username>@posteo.de` near my git commits?
 3. How long will it take till I get my money back? Or should I even revoke my account?
 4. Is it a lacking feature, or is it by-design? Why? WHY the Force not?
 
@@ -123,11 +123,11 @@ That was until I, firstly, understood it's unlikely for someone to spoof my user
 1. I'm not a company, I represent myself. There is no real benefit* of faking my personal-work address.
 2. SPF and DKIM still work, so it's double unlikely to spoof my account.
 {% end %}
-And, secondly, setting more strict DMARC can cause issues for forwarded, alias, and receiving emails alike.
+And, secondly, setting more strict DMARC can cause delivery issues for forwarded, alias, and receiving emails alike.
 
 Apparently, it is not a must to set DMARC for all email providers, [says dmarc.org](https://dmarc.org/wiki/FAQ#Why_doesn.27t_.28major_mailbox_provider.29_publish_a_DMARC_record.3F).
 
-If I'm not going to receive or send any emails on my domain, then I will just [set DNS records accordingly](https://www.cloudflare.com/learning/dns/dns-records/protect-domains-without-email/).
+So, if I'm not going to receive or send any emails on my domain, then I will just [set DNS records accordingly](https://www.cloudflare.com/learning/dns/dns-records/protect-domains-without-email/).
 
 # Services List
 - ProtonMail ― a default choice if you don't really want to get into PSA too much.
@@ -137,6 +137,7 @@ If I'm not going to receive or send any emails on my domain, then I will just [s
     - I guess they don't encrypt meta-data as well
 - [Tuta](https://tuta.com/) (ex Tutanota) ― another namely Germany-based email provider
   - I couldn't Sign Up with my browser setup
+  - although their encryption covers the Subject line, it's yet impossible to [safely] communicate with other PGP-users ― it's a no go
 ![img.png](tuta_signup_fail.png)
 - [CounterMail](https://countermail.com/) ― super-~~paranoid~~aware
 {% sidenote(uid="cm", inline=true) %}
