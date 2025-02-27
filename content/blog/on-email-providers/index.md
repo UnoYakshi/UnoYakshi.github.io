@@ -9,8 +9,8 @@ author = "Uno Yakshi"
 [extra]
 toc = true
 toc_sidebar = true
-disclaimer = """
-1. Do not treat this page as a viable source in your own threat modeling. \
+disclaimer = """ \
+1. Do not treat this page as a viable source in your own threat modeling.
 2. There will be no full explanation for the used abbreviations.
 """
 +++
