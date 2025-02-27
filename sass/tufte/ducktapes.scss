@@ -73,3 +73,9 @@ del {
     border-radius: 50%;
   }
 }
+
+// Visually separate bullet points...
+li {
+  margin: .5em;
+  line-height: 1.2em;
+}
