@@ -2,7 +2,7 @@ base_url = "https://yakshi.uno"
 
 compile_sass = true
 generate_robots_txt = true
-generate_feeds = true
+generate_feeds = false
 
 theme = "duckquill"
 title = "Uno Yakshi"
