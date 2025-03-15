@@ -10,6 +10,8 @@ tags = ["PSA", "email", "comparison"]
 
 [extra]
 toc = true
+banner = "banner.webp"
+banner_pixels = true
 toc_sidebar = true
 disclaimer = """ \
 1. Do not treat this page as a viable source in your own threat modeling.
