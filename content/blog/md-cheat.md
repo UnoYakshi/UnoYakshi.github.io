@@ -1,10 +1,12 @@
 +++
 title = "Markdown Test/Cheatsheet"
 subtitle = "This is Markdown test and cheatsheet for Duckquill + Tufte"
-tags = ["markdown", "customization", "tech"]
 date = 2025-02-22
 draft = false
 author = "Uno Yakshi"
+
+[taxonomies]
+tags = ["markdown", "customization", "tech"]
 
 [extra]
 toc = true

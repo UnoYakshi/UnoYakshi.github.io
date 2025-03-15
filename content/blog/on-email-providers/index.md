@@ -1,10 +1,12 @@
 +++
 title = "On E-mail Providers"
 subtitle = "Why did I choose Posteo?"
-tags = ["PSA", "email", "comparison"]
 date = 2025-02-26
 draft = false
 author = "Uno Yakshi"
+
+[taxonomies]
+tags = ["PSA", "email", "comparison"]
 
 [extra]
 toc = true

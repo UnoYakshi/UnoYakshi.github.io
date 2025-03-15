@@ -8,6 +8,11 @@ theme = "duckquill"
 title = "Uno Yakshi"
 description = "Uno Yakshi's personal web-site"
 
+taxonomies = [
+    { name = "tags"},
+    { name = "categories"},
+]
+
 [markdown]
 extra_syntaxes_and_themes = [
     "highlight_themes",
