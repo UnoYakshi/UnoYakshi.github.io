@@ -81,6 +81,28 @@ li {
   line-height: 1.2em;
 }
 
+// Quadratic tags' border + decor + consistent hover...
+.tags > li {
+  :hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+  border-radius: 6px;
+  border: none;
+
+  ::before {
+    content: "#";
+    font-size: 0.66em;
+  }
+
+  a {
+    box-shadow: none;
+    border-radius: 4px;
+    color: var(--accent-color);
+  }
+
+}
+
 // Make articles list quadratic and simpler...
 #article-list article {
   border-radius: 6px;
