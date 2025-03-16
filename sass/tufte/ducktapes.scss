@@ -1,3 +1,4 @@
+//@import "settings";
 @import "mixins";
 
 #sidebar {
@@ -78,4 +79,16 @@ del {
 li {
   margin: .5em;
   line-height: 1.2em;
+}
+
+// Make articles list quadratic and simpler...
+#article-list article {
+  border-radius: 6px;
+  border: none;
+  box-shadow: initial;
+
+  h3 {
+    font-family: inherit;
+    font-style: inherit;
+  }
 }
