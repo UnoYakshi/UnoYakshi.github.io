@@ -14,3 +14,11 @@ $contrast-color: #a00000;
 $border-color: #333333;
 $link-style: underline; // choices are 'color' or 'underline'. Color option styles links with $contrast-color set above
 $hr-color: #111;
+
+:root {
+  // Tone down too round corners...
+  --rounded-corner: 0.2em;
+  --rounded-corner-small: 0.1em;
+  // Remove 3D'ish-ness of edges...
+  --edge-highlight: none;
+}
