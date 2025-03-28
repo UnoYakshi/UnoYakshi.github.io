@@ -115,3 +115,9 @@ li {
     font-style: inherit;
   }
 }
+
+
+#site-nav nav li a.active {
+  border-bottom: 4px solid var(--accent-color);
+  background: none;
+}
