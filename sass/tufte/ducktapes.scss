@@ -90,17 +90,20 @@ li {
   border-radius: 6px;
   border: none;
 
-  ::before {
-    content: "#";
-    font-size: 0.66em;
-  }
-
   a {
     box-shadow: none;
     border-radius: 4px;
     color: var(--accent-color);
   }
+}
 
+.tag::before {
+  content: " #";
+  font-size: 0.66em;
+}
+
+.tags a .count {
+  border-radius: 0;
 }
 
 // Make articles list quadratic and simpler...
