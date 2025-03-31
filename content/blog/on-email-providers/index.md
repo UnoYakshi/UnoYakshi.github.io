@@ -1,12 +1,19 @@
 +++
 title = "On E-mail Providers"
 subtitle = "Why did I choose Posteo?"
+description = """
+One of the most crucial steps on your Big Tech Away journey is to move your [main] email account away from Google, Apple, Microsoft, QQ, etc.
+If you aren't tech savvy and enthusiastic enough, you probably shouldn't self-host your own email server.
+What email provider should you use then?
+
+Let's see if my thoughts regarding the switch to [Posteo.de](https://posteo.de/) help you…
+"""
 date = 2025-02-26
 draft = false
 author = "Uno Yakshi"
 
 [taxonomies]
-tags = ["PSA", "email", "comparison"]
+tags = ["PSA", "email", "comparison", "Big Tech Away Journey"]
 
 [extra]
 toc = true
