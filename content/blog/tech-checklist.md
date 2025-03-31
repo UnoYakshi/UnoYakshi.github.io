@@ -3,7 +3,7 @@ title = "Tech Checklist"
 subtitle = "This is Markdown test and cheatsheet for Duckquill + Tufte"
 description = "A checklist to help you set up your project."
 date = 2025-04-01
-draft = false
+draft = true
 author = "Uno Yakshi"
 
 [taxonomies]
