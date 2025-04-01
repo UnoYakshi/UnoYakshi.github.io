@@ -132,3 +132,10 @@ img {
 blockquote {
   background-color: var(--accent-color-alpha);
 }
+
+// Add highlighting to dynamic ToC…
+#sidebar a.active {
+  font-weight: bold;
+  color: $accent-color;
+  margin-left: 5px;
+}
