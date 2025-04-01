@@ -10,6 +10,8 @@ weight = 10
 - Under construction.
 - Built with [Zola](https://www.getzola.org/).
 - Uses [Duckquill](https://duckquill.daudix.one) theme and crude [Tufte-CSS](http://ayekat.ch/blog/tufte-css) integration.
+- No Ads, no trackers. At least, not intentionally. I do try not to rely on such dependencies, however.
+- Should work just fine w/o JS. Will only lack minor QoL features, but nothing critical will break.
 
 ## Avatar
 {{ image(url="about/uno.png", end=true) }}
