@@ -1,6 +1,7 @@
 +++
 title = "Markdown Test/Cheatsheet"
 subtitle = "This is Markdown test and cheatsheet for Duckquill + Tufte"
+description = "Careful: it can break your Chromium browser!"
 date = 2025-02-22
 draft = false
 author = "Uno Yakshi"
