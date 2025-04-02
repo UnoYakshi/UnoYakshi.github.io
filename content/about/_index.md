@@ -14,7 +14,7 @@ weight = 10
 - Should work just fine w/o JS. Will only lack minor QoL features, but nothing critical will break.
 
 ## Avatar
-{{ image(url="about/uno.png", end=true) }}
+{{ image(url="/about/uno.png", end=true) }}
 
 I've been asked a lot about my avatar.
 It's basically [Kurosawa\'s «Ran»](https://wikiless.privacyredirect.com/wiki/Ran_(film)?lang=en) with Moon-ish background.
