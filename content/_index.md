@@ -18,5 +18,5 @@ Aside from commercial and FOSS development I consult various companies, organiza
 - Privacy, Security, and Anonymity ([PSA](/tags/psa) tag) <span class="spoiler">&#43;&#32;&#79;&#112;&#83;&#101;&#99;</span>
 - AI + LLMSec
 
-You can find my [CV (résumé)](/WHS_CV.pdf) in the navigation bar --- there lie **contacts**. 
-Some of my thoughts on mostly technical matters can be found in the [Blog section](/blog).
+You can find my [CV (résumé)](/WHS_CV.pdf) and [Contacts](/contacts) in the navigation bar. 
+Some of my thoughts on mostly technical matters can be found in the [Blog](/blog) section.
