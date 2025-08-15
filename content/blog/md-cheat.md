@@ -311,6 +311,13 @@ Display: $$f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
 
 Inline: $\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
 
+{% alert(note=true) %}
+Since it crashes the whole page in Chromium-based browsers, I decided to turn it off for now.
+
+Probably related:
+- [https://github.com/KaTeX/KaTeX/issues/2793](https://github.com/KaTeX/KaTeX/issues/2793)
+- [https://issues.chromium.org/issues/40087608](https://issues.chromium.org/issues/40087608)
+{% end %}
 
 ## GitHub Alerts
 > [!NOTE]

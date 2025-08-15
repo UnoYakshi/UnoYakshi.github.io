@@ -40,7 +40,7 @@ accent_color_dark = "#808080"
 lang = "en"
 codeblock = true
 show_copy_button = true
-katex = true
+katex = false
 toc = true
 toc_sidebar = true
 
