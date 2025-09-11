@@ -3,9 +3,9 @@
 <div class="container">
     <div class="clock">
         <!-- Hands...-->
-        <div style="--clr:#ff3d58; --h:72px;" id="hour" class="hand"><i></i></div>
-        <div style="--clr:#00a6ff; --h:82px; " id="min" class="hand"><i></i></div>
-        <div style="--clr:#ffffff; --h:92px;" id="sec" class="hand"><i></i></div>
+        <div style="--clr:#222; --h:90px; --w:6px;" id="hour" class="hand"><i class="hand-hour"></i></div>
+        <div style="--clr:#333; --h:96px; --w:4px;" id="min" class="hand"><i class="hand-min"></i></div>
+        <div style="--clr:#dedede; --h:106px; --w:2px;" id="sec" class="hand"><i class="hand-sec"></i></div>
 
         <!-- Hours...-->
         <span style="--i:1;"><b>1</b></span>
@@ -52,6 +52,15 @@
     inset: 12px;
     text-align: center;
 }
+.clock span::before {
+    content: "";
+    position: absolute;
+    top: -11px; left: 50%;
+    width: 2px;
+    height: 6px;
+    background: rgba(255,255,255,0.25);
+    transform: translateX(-50%);
+}
 .clock span b {
     transform: rotate(calc(-30deg * var(--i)));
     display: inline-block;
@@ -63,7 +72,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #dedede;
     z-index: 2;
 }
 .hand {
@@ -75,7 +84,7 @@
 .hand i {
     position: absolute;
     background-color: var(--clr);
-    width: 4px;
+    width: var(--w);
     height: var(--h);
     border-radius: 8px;
 }
