@@ -3,8 +3,8 @@
 <div class="container">
     <div class="clock">
         <!-- Hands...-->
-        <div style="--clr:#222; --h:90px; --w:6px;" id="hour" class="hand"><i class="hand-hour"></i></div>
-        <div style="--clr:#333; --h:96px; --w:4px;" id="min" class="hand"><i class="hand-min"></i></div>
+        <div style="--clr:#222; --h:80px; --w:6px;" id="hour" class="hand"><i class="hand-hour"></i></div>
+        <div style="--clr:#333; --h:96px; --w:6px;" id="min" class="hand"><i class="hand-min"></i></div>
         <div style="--clr:#dedede; --h:106px; --w:2px;" id="sec" class="hand"><i class="hand-sec"></i></div>
 
         <!-- Hours...-->
@@ -89,7 +89,13 @@ h1 {
     background-color: var(--clr);
     width: var(--w);
     height: var(--h);
-    border-radius: 8px;
+    clip-path: polygon(
+      50% 0%,    /* point at center */
+      100% 10%,  /* right slope */
+      90% 100%,  /* right base */
+      10% 100%,  /* left base */
+      0% 10%     /* left slope */
+    );
 }
 </style>
 
