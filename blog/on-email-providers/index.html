@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" data-theme="dark">
+<head>
+	<!-- 2025-09-14 Sun 17:42 -->
+	<meta charset="UTF-8" />
+	<meta name="description" content="Uno Yakshi&#x27;s personal web-site" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#dedede" />
+		<meta name="theme-color" content="#808080" media="(prefers-color-scheme:dark)" />
+	<title>On E-mail Providers - Uno Yakshi</title>
+	<link rel="canonical" href="https://yakshi.uno/blog/on-email-providers/" /><link rel="icon" type="image/png" href="https://yakshi.uno/favicon.png" />
+
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://yakshi.uno/apple-touch-icon.png" />
+<style type="text/css">
+	:root {--accent-color: #dedede;--contrast-color: #fff;}[data-theme="dark"] {
+			--accent-color: #808080;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root:not([data-theme="light"]) {
+				--accent-color: #808080;
+			}
+		}</style>
+
+			<link type="text/css" rel="stylesheet" href="https://yakshi.uno/style.css" />
+			<link type="text/css" rel="stylesheet" href="https://yakshi.uno/mods.css" />
+			<link type="text/css" rel="stylesheet" href="https://yakshi.uno/tufte.css" />
+			<script type="text/javascript" defer  src="https://yakshi.uno/closable.js"></script>
+			<script type="text/javascript" defer  src="https://yakshi.uno/copy-button.js"></script>
+
+	<meta property="og:site_name" content="Uno Yakshi" />
+	<meta property="og:title" content="On E-mail Providers - Uno Yakshi" />
+	<meta property="og:url" content="https://yakshi.uno/blog/on-email-providers/" />
+	<meta property="og:description" content="One of the most crucial steps on your Big Tech Away journey is to move your [main] email account away from Google, Apple, Microsoft, QQ, etc.
+If you aren&#x27;t tech savvy and enthusiastic enough, you probably shouldn&#x27;t self-host your own email server.
+What email provider should you use then?
+
+Let&#x27;s see if my thoughts regarding the switch to [Posteo.de](https:&#x2F;&#x2F;posteo.de&#x2F;) help you…
+" />
+	<meta property="og:image" content="https:&#x2F;&#x2F;yakshi.uno&#x2F;processed_images&#x2F;banner.b943905ec46aef4f.jpg" />
+	<meta property="og:locale" content="en_US" />
+</head>
+
+<body>
+
+		
+<header id="site-nav">
+	<nav>
+		<a href="#main-content" tabindex="0">
+			Skip to Main Content
+		</a>
+		<ul>
+			<li id="home">
+				<a href="https://yakshi.uno">
+					<i class="icon"></i>Uno Yakshi</a>
+			</li>
+			<li class="divider"></li>
+					<li>
+						<a href="https://yakshi.uno/about">About</a>
+					</li>
+					<li>
+						<a href="https://yakshi.uno/blog">Blog</a>
+					</li>
+					<li>
+						<a href="https://yakshi.uno/contacts">Contacts</a>
+					</li>
+					<li>
+						<a href="https://yakshi.uno/WHS_CV.pdf">CV</a>
+					</li>
+				<li id="theme-switcher">
+					<details class="closable">
+						<summary class="circle" title="Theme">
+							<i class="icon"></i>
+						</summary>
+						<ul>
+							<li>
+								<button class="circle" id="theme-light" title="Switch to Light Theme">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button class="circle" id="theme-dark" title="Switch to Dark Theme">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button class="circle" id="theme-system" title="Use System Theme">
+									<i class="icon"></i>
+								</button>
+							</li>
+						</ul>
+					</details>
+				</li>
+		</ul>
+	</nav>
+</header>
+<div id="sidebar">
+			<div><h2>Table of Contents</h2>
+		<ul><li>
+					<a href="https://yakshi.uno/blog/on-email-providers/#tl-dr">TL&amp;DR</a></li><li>
+					<a href="https://yakshi.uno/blog/on-email-providers/#intro">Intro</a></li><li>
+					<a href="https://yakshi.uno/blog/on-email-providers/#reasons">Reasons</a><ul><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#time">Time</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#complexity">Complexity</a>
+								</li></ul></li><li>
+					<a href="https://yakshi.uno/blog/on-email-providers/#on-posteo">On Posteo</a><ul><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#pros">Pros</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#no-custom-domain">No Custom Domain?!</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#dmarc-policy-none">DMARC Policy none?!</a>
+								</li></ul></li><li>
+					<a href="https://yakshi.uno/blog/on-email-providers/#services-list">Services List</a></li></ul></div>
+		</div><main id="main-content">
+		
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+<script src="/js/dynamic_toc.js"></script>
+
+		<article><div id="banner-container">
+			<img id="banner" class="full-bleed pixels" src="https://yakshi.uno/blog/on-email-providers/banner.webp"  />
+		</div><div id="heading"><p>
+				<small>
+					<time datetime=" 2025-02-26T00:00:00+00:00">Published on
+						February 26, 2025</time></small>
+			</p><h1>On E-mail Providers</h1>
+				<ul class="tags"><li><a class="tag" href="https://yakshi.uno/tags/psa/">PSA</a></li><li><a class="tag" href="https://yakshi.uno/tags/email/">email</a></li><li><a class="tag" href="https://yakshi.uno/tags/comparison/">comparison</a></li><li><a class="tag" href="https://yakshi.uno/tags/big-tech-away-journey/">Big Tech Away Journey</a></li>
+				</ul>
+	</div>
+
+	<div id="buttons-container"><details id="toc" class="closable">
+				<summary title="Table of Contents"><i class="icon"></i></summary>
+				<div>
+					<strong class="title">Table of Contents</strong>
+					<div>
+						<ul><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#tl-dr">TL&amp;DR</a></li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#intro">Intro</a></li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#reasons">Reasons</a><ul><li>
+													<a href="https://yakshi.uno/blog/on-email-providers/#time">Time</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/on-email-providers/#complexity">Complexity</a>
+												</li></ul></li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#on-posteo">On Posteo</a><ul><li>
+													<a href="https://yakshi.uno/blog/on-email-providers/#pros">Pros</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/on-email-providers/#no-custom-domain">No Custom Domain?!</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/on-email-providers/#dmarc-policy-none">DMARC Policy none?!</a>
+												</li></ul></li><li>
+									<a href="https://yakshi.uno/blog/on-email-providers/#services-list">Services List</a></li></ul>
+					</div>
+				</div>
+			</details><a id="go-to-top" href="#top" title="Go to Top"><i class="icon"></i></a></div><div class="statement-container disclaimer">
+		<strong class="title">
+			<i class="icon"></i>Disclaimer</strong>
+		<ol>
+<li>Do not treat this page as a viable source in your own threat modeling.</li>
+<li>There will be no full explanation for the used abbreviations.</li>
+</ol>
+
+	</div><h1 id="tl-dr">TL&amp;DR</h1>
+<p>I decided to use <a href="https://posteo.de/en/">Posteo</a> as an email-provider as it:</p>
+<ul>
+<li>allows to set up OpenPGP and S/MIME</li>
+<li>does most of the hard work for me</li>
+<li>has a neat reputation in <abbr title="Privacy ― Security ― Anonymity">PSA</abbr> world</li>
+<li>costs 1 €/month (and accepts cash)</li>
+<li>somewhat cares about ecology</li>
+</ul>
+<h1 id="intro">Intro</h1>
+<div class="epigraph">
+	<blockquote>
+		<p>The journey of thousand steps starts with a single stair or a single step. If you go up that is.</p>
+
+		<footer>
+			<cite><p>― somebody, sometime, probably</p>
+</cite>
+		</footer>
+	</blockquote>
+</div>
+<p>A few years back, I’ve decided to get better control of my own privacy, security, and anonymity.
+When came the moment of publicly exposing my website as a business card (I guess) and a little thoughts garden,
+I thought setting up a contacts page will be quite easy for a programmer with almost a decade of experience.
+And then I’ve spent almost a full-time week to compare several options when
+it came to email.<label class="margin-toggle sidenote-number" for="sn-self-hosted"></label>
+<input id="sn-self-hosted" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote">I’ve also considered running my own instance. Probably <a href="https://mailcow.email/">Mailcow</a> or <a href="https://stalw.art/">Stalwart</a>.</span>
+
+
+Unfortunately, I’m not going to describe all the comparisons here, not as of now at least.
+However, I will gladly share my key takeaways and reasoning for choosing <a href="https://posteo.de/">Posteo.de</a>.</p>
+<h1 id="reasons">Reasons</h1>
+<p>If in 2025+ some people are still in doubt,
+I’m but to provide a few reasons why you should choose an email provider <abbr title="if and only if">iff</abbr>:</p>
+<ul>
+<li>your infrastructural scale doesn’t really scream for your own thing</li>
+<li>your threat model allows it
+<ul>
+<li>and your tech savviness allows you to set up all the public-private-certificate shebang</li>
+</ul>
+</li>
+<li>you are lazy and mortal</li>
+</ul>
+<h2 id="time">Time</h2>
+<p>The first reason I even considered email service providers is time itself.
+If I’ve spent a week just to compare 10+ services and tools, how much would it take to correctly set it up?
+Would there be no such services at all if it’d be so easy support one?
+In case you are a single individual (or a small team/family), you are better to go with a provider.
+I mean, most people already do it with Gmail, MS Outlook, Yahoo, Baidu, etc.
+The only difference is, alas, that they don’t care PSA.</p>
+<h2 id="complexity">Complexity</h2>
+<p>Speaking of “easy”, it’s not. Neither it’s simple. There are a number of aspects you need to consider.
+For example:</p>
+<ul>
+<li>have a reliable hosting [in a data-center] or take care of your own infrastructure with 99.999+% availability</li>
+<li>correctly setup all the policies/methods:
+<abbr title="Sender Policy Framework">SPF</abbr>,
+<abbr title="DomainKeys Identified Mail">DKIM</abbr>,
+<abbr title="Domain-based Message Authentication Reporting & Conformance">DMARC</abbr>,
+<abbr title="DNS-based Authentication of Named Entities">DANE</abbr>,</li>
+<li>correctly setup <abbr title="End-to-End Encryption">E2EE</abbr>:
+[Open]<abbr title="Pretty Good Privacy">PGP</abbr>,
+<abbr title="Secure/Multipurpose Internet Mail Extension">S/MIME</abbr>, etc.</li>
+<li>spam filter
+<ul>
+<li>else you’ll end up in a heap of useless data</li>
+<li>and lose your storage space to it</li>
+</ul>
+</li>
+<li>malware filter <label class="margin-toggle sidenote-number" for="sn-"></label>
+<input id="sn-" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote">Or are you going to force users to look at plain text?</span>
+
+<ul>
+<li>ads such as Facebook Pixel, Google Tag Manager, Yandex Counter, etc.</li>
+<li>phishing links</li>
+<li>executable attachments</li>
+<li>LLM jailbreaking</li>
+</ul>
+</li>
+<li>backups! <label class="margin-toggle sidenote-number" for="sn-backups-rule"></label>
+<input id="sn-backups-rule" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote">Remember the <a href="https://www.seagate.com/gb/en/blog/what-is-a-3-2-1-backup-strategy/">3-2-1 rule</a>:</p>
+<ul>
+<li>3 data copies</li>
+<li>2 types of storage/media</li>
+<li>1 offsite location</li>
+</ul>
+</span>
+
+</li>
+</ul>
+<h1 id="on-posteo">On Posteo</h1>
+<p>I’ve been reading Reddit, PrivacyGuides’ discussions, PrivacyTools, LLMs, marketing slogans, and trusting my own intuition ―
+and after careful and a bit stressful consideration, I’ve decided to stay on Posteo.</p>
+<h2 id="pros">Pros</h2>
+<ul>
+<li>it provides necessary level of privacy and anonymity [for me]</li>
+<li>it utilizes Open Source solutions, including OpenPGP</li>
+<li>it is <a href="https://www.fsf.org/resources/webmail-systems">recommended</a> by <abbr title="Free Software Foundation">FSF</abbr>, alongside RiseUp and A/I
+<label class="margin-toggle sidenote-number" for="sn-political-services"></label>
+<input id="sn-political-services" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote">Those two will work even w/o JS.
+But will also raise suspicions for state-funded adversaries, if you use them too openly like IT-work or purchases.
+It’s a different beast.</p>
+<p>P.S. I do not possess an invitation code for RiseUp.</span>
+
+</li>
+<li>it’s ‘all green’ as in no real red flags + ecology-wise
+<ul>
+<li><a href="https://internet.nl/mail/posteo.de/1455134/">Internet.NL shows 83%</a> (issues: none for DMARC and IPv6 unavailable)</li>
+</ul>
+</li>
+<li>it’s really cheap</li>
+</ul>
+<h2 id="no-custom-domain">No Custom Domain?!</h2>
+<p>The first drawback I’ve noticed (just right after paying for the service) that there is no support for custom domain.
+It was odd, even considering it’s just 1 euro/month. A few questions came to my mind nearly in an instant.</p>
+<ol>
+<li>Why would a commercial company refuse an extra <del>buck</del>euro?</li>
+<li>How will I look in the IT/business community with <code>&lt;username&gt;@posteo.de</code> near my git commits?</li>
+<li>How long will it take till I get my money back? Or should I even revoke my account?</li>
+<li>Is it a lacking feature, or is it by-design? Why? WHY the Force not?</li>
+</ol>
+<p>Long story short, it is problematic to keep the same level of privacy and security for custom domains.
+If you really need to set up your custom domain, you can still automatically forward.
+Check out <a href="https://andyleejordan.com/posts/posteo/">Andy’s post</a> on it!</p>
+<p>Towards answering the questions.</p>
+<ol>
+<li>It would require extra work and doesn’t add up to Posteo’s goals.</li>
+<li>Like a person who made a well-weighted decision despite the “tradition”. Not to mention switching from <code>@gmail.com</code>.</li>
+<li>It’s about 180 days, according to Posteo. But I’m not going to revoke my account.</li>
+<li>By design. Domains are usually purchased for a real (as in personal data) entity, with names, phones, and IDs.
+If your email service support custom domains, it is a link to your physical (vs. virtual) identity.
+Hence, it could help to compromise you.</li>
+</ol>
+<h2 id="dmarc-policy-none">DMARC Policy <code>none</code>?!</h2>
+<p>Another aspect worried me.
+Their DMARC policy is set to <code>none</code> instead of <code>reject</code> or <code>quarantine</code>.
+That was until I, firstly, understood it’s unlikely for someone to spoof my username.
+<label class="margin-toggle sidenote-number" for="sn-spoof-email"></label>
+<input id="sn-spoof-email" class="margin-toggle" type="checkbox" />
+
+</p>
+<span class="sidenote"><ol>
+<li>I’m not a company, I represent myself. There is no real benefit* of faking my personal-work address.</li>
+<li>SPF and DKIM still work, so it’s double unlikely to spoof my account.</li>
+</ol>
+</span>
+<p>
+
+
+And, secondly, setting more strict DMARC can cause delivery issues for forwarded, alias, and receiving emails alike.</p>
+<p>Apparently, it is not a must to set DMARC for all email providers, <a href="https://dmarc.org/wiki/FAQ#Why_doesn.27t_.28major_mailbox_provider.29_publish_a_DMARC_record.3F">says dmarc.org</a>.</p>
+<p>So, if I’m not going to receive or send any emails on my domain, then I will just <a href="https://www.cloudflare.com/learning/dns/dns-records/protect-domains-without-email/">set DNS records accordingly</a>.</p>
+<h1 id="services-list">Services List</h1>
+<ul>
+<li>ProtonMail ― a default choice if you don’t really want to get into PSA too much.
+<ul>
+<li>supports PGP instead of OpenPGP</li>
+<li>custom domains</li>
+<li>E2EE email body and attachments ― doesn’t encrypt Subject line
+<ul>
+<li>I guess they don’t encrypt meta-data as well</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://tuta.com/">Tuta</a> (ex Tutanota) ― another namely Germany-based email provider
+<ul>
+<li>I couldn’t Sign Up with my browser setup</li>
+<li>although their encryption covers the Subject line, it’s yet impossible to [safely] communicate with other PGP-users ― it’s a no go
+<img src="https://yakshi.uno/blog/on-email-providers/tuta_signup_fail.png" alt="img.png" /></li>
+</ul>
+</li>
+<li><a href="https://countermail.com/">CounterMail</a> ― super-<del>paranoid</del>aware
+<label class="margin-toggle sidenote-number" for="sn-cm"></label>
+<input id="sn-cm" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote">They even store the encrypted data on CDs instead of HDDs.</span>
+
+(I love it!)
+and kind of pricey (to me), but I don’t have an invitation code.
+They still have <a href="https://webmail.countermail.com/tools/tools.html">a bunch of useful tool</a> in the open.</li>
+<li>Mailfence</li>
+<li>Startmail</li>
+</ul>
+
+</article><hr />
+	<nav id="post-nav"><a class="post-nav-item post-nav-prev" href="https:&#x2F;&#x2F;yakshi.uno&#x2F;blog&#x2F;md-cheat&#x2F;">
+				<div class="nav-arrow">Previous</div>
+				<span class="post-title">Markdown Test&#x2F;Cheatsheet</span>
+			</a></nav>
+		
+	<span id="copy-code-text" class="hidden">Copy Code</span>
+
+	</main>
+	<footer id="site-footer">
+</footer>
+
+
+</body>
+</html>

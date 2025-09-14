@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" data-theme="dark">
+<head>
+	<!-- 2025-09-14 Sun 17:42 -->
+	<meta charset="UTF-8" />
+	<meta name="description" content="Uno Yakshi&#x27;s personal web-site" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#dedede" />
+		<meta name="theme-color" content="#808080" media="(prefers-color-scheme:dark)" />
+	<title>Markdown Test/Cheatsheet - Uno Yakshi</title>
+	<link rel="canonical" href="https://yakshi.uno/blog/md-cheat/" /><link rel="icon" type="image/png" href="https://yakshi.uno/favicon.png" />
+
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://yakshi.uno/apple-touch-icon.png" />
+<style type="text/css">
+	:root {--accent-color: #dedede;--contrast-color: #fff;}[data-theme="dark"] {
+			--accent-color: #808080;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root:not([data-theme="light"]) {
+				--accent-color: #808080;
+			}
+		}</style>
+
+			<link type="text/css" rel="stylesheet" href="https://yakshi.uno/style.css" />
+			<link type="text/css" rel="stylesheet" href="https://yakshi.uno/mods.css" />
+			<link type="text/css" rel="stylesheet" href="https://yakshi.uno/tufte.css" />
+			<script type="text/javascript" defer  src="https://yakshi.uno/closable.js"></script>
+			<script type="text/javascript" defer  src="https://yakshi.uno/copy-button.js"></script>
+
+	<meta property="og:site_name" content="Uno Yakshi" />
+	<meta property="og:title" content="Markdown Test/Cheatsheet - Uno Yakshi" />
+	<meta property="og:url" content="https://yakshi.uno/blog/md-cheat/" />
+	<meta property="og:description" content="Careful: it can break your Chromium browser!" />
+	<meta property="og:image" content="https://yakshi.uno/card.png" />
+	<meta property="og:locale" content="en_US" />
+</head>
+
+<body>
+
+		
+<header id="site-nav">
+	<nav>
+		<a href="#main-content" tabindex="0">
+			Skip to Main Content
+		</a>
+		<ul>
+			<li id="home">
+				<a href="https://yakshi.uno">
+					<i class="icon"></i>Uno Yakshi</a>
+			</li>
+			<li class="divider"></li>
+					<li>
+						<a href="https://yakshi.uno/about">About</a>
+					</li>
+					<li>
+						<a href="https://yakshi.uno/blog">Blog</a>
+					</li>
+					<li>
+						<a href="https://yakshi.uno/contacts">Contacts</a>
+					</li>
+					<li>
+						<a href="https://yakshi.uno/WHS_CV.pdf">CV</a>
+					</li>
+				<li id="theme-switcher">
+					<details class="closable">
+						<summary class="circle" title="Theme">
+							<i class="icon"></i>
+						</summary>
+						<ul>
+							<li>
+								<button class="circle" id="theme-light" title="Switch to Light Theme">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button class="circle" id="theme-dark" title="Switch to Dark Theme">
+									<i class="icon"></i>
+								</button>
+							</li>
+							<li>
+								<button class="circle" id="theme-system" title="Use System Theme">
+									<i class="icon"></i>
+								</button>
+							</li>
+						</ul>
+					</details>
+				</li>
+		</ul>
+	</nav>
+</header>
+<div id="sidebar">
+			<div><h2>Table of Contents</h2>
+		<ul><li>
+					<a href="https://yakshi.uno/blog/md-cheat/#typography-elements">Typography Elements</a><ul><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#others">Others</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#headings-h1-to-h6">Headings H1 to H6</a>
+								</li></ul></li><li>
+					<a href="https://yakshi.uno/blog/md-cheat/#h1-heading">H1 Heading</a><ul><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#h2-heading">H2 Heading</a>
+								</li></ul></li><li>
+					<a href="https://yakshi.uno/blog/md-cheat/#markdown">Markdown</a><ul><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#blockquote">Blockquote</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#list-items">List Items</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#code-blocks">Code Blocks</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#table">Table</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#horizontal-line">Horizontal Line</a>
+								</li></ul></li><li>
+					<a href="https://yakshi.uno/blog/md-cheat/#custom">Custom</a><ul><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#sidenotes">Sidenotes</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#margin-notes">Margin Notes</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#footnotes-list">Footnotes &#x2F; List</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#media">Media</a>
+								</li></ul></li><li>
+					<a href="https://yakshi.uno/blog/md-cheat/#extra-features">Extra Features</a><ul><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#katex">KaTeX</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#github-alerts">GitHub Alerts</a>
+								</li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#mermaid-diagrams">Mermaid Diagrams</a>
+								</li></ul></li></ul></div>
+		</div><main id="main-content">
+		
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+<script src="/js/dynamic_toc.js"></script>
+
+		<article><div id="heading"><p>
+				<small>
+					<time datetime=" 2025-02-22T00:00:00+00:00">Published on
+						February 22, 2025</time></small>
+			</p><h1>Markdown Test&#x2F;Cheatsheet</h1>
+				<ul class="tags"><li><a class="tag" href="https://yakshi.uno/tags/markdown/">markdown</a></li><li><a class="tag" href="https://yakshi.uno/tags/customization/">customization</a></li><li><a class="tag" href="https://yakshi.uno/tags/tech/">tech</a></li>
+				</ul>
+	</div>
+
+	<div id="buttons-container"><details id="toc" class="closable">
+				<summary title="Table of Contents"><i class="icon"></i></summary>
+				<div>
+					<strong class="title">Table of Contents</strong>
+					<div>
+						<ul><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#typography-elements">Typography Elements</a><ul><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#others">Others</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#headings-h1-to-h6">Headings H1 to H6</a>
+												</li></ul></li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#h1-heading">H1 Heading</a><ul><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#h2-heading">H2 Heading</a>
+												</li></ul></li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#markdown">Markdown</a><ul><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#blockquote">Blockquote</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#list-items">List Items</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#code-blocks">Code Blocks</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#table">Table</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#horizontal-line">Horizontal Line</a>
+												</li></ul></li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#custom">Custom</a><ul><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#sidenotes">Sidenotes</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#margin-notes">Margin Notes</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#footnotes-list">Footnotes &#x2F; List</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#media">Media</a>
+												</li></ul></li><li>
+									<a href="https://yakshi.uno/blog/md-cheat/#extra-features">Extra Features</a><ul><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#katex">KaTeX</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#github-alerts">GitHub Alerts</a>
+												</li><li>
+													<a href="https://yakshi.uno/blog/md-cheat/#mermaid-diagrams">Mermaid Diagrams</a>
+												</li></ul></li></ul>
+					</div>
+				</div>
+			</details><a id="go-to-top" href="#top" title="Go to Top"><i class="icon"></i></a></div><div class="statement-container disclaimer">
+		<strong class="title">
+			<i class="icon"></i>Disclaimer</strong>
+		<p>This page is mostly for my own manual tests. It’s public so others could use it, too.</p>
+
+	</div><p>This is Markdown Test/Cheatsheet for <a href="https://duckquill.daudix.one/">Duckquill</a> Zola theme and my buggy adaptaion of <a href="https://edwardtufte.github.io/tufte-css/">Tufte-CSS</a>.</p>
+<h1 id="typography-elements">Typography Elements</h1>
+<p>This is a paragraph.</p>
+<p><strong>This text is bolded.</strong></p>
+<p><em>Italiano!</em></p>
+<p><del>It was a dumb idea</del>My decision was less than optimal.</p>
+<p>A highlighted inline code looks like <code>ThisIsMyCode()</code>.
+You can check  how fenced code block works in the <a href="https://yakshi.uno/blog/md-cheat/#code-blocks">Code Blocks</a> section.</p>
+<p>This text is a <a href="#">hyperlink</a> or <a href="http://www.example.com">http://www.example.com</a>.</p>
+<h2 id="others">Others</h2>
+<p>Markdown abbreviations:
+*[HTML]: Hypertext Markup Language
+*[CSS]: Cascading Style Sheets</p>
+<p>HTML <code>&lt;abbr&gt;</code> tag:
+the <abbr title="Hyper Text Markup Language">HTML</abbr> specification
+is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+<p><code>&lt;sub&gt;</code> tag: CO<sub>2</sub></p>
+<p>With <code>^</code>: X^2^</p>
+<p><code>&lt;sup&gt;</code> tag: X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>With <code>~</code>: H~2~O</p>
+<p>Keyboard: <kbd>Ctrl</kbd> + <kbd>Q</kbd></p>
+<p>Mark/highlight: TODO</p>
+<hr />
+<h2 id="headings-h1-to-h6">Headings H1 to H6</h2>
+<h1 id="h1-heading">H1 Heading</h1>
+<h2 id="h2-heading">H2 Heading</h2>
+<h3 id="h3-heading">H3 Heading</h3>
+<h4 id="h4-heading">H4 Heading</h4>
+<h5 id="h5-heading">H5 Heading</h5>
+<h6 id="h6-heading">H6 Heading</h6>
+<hr />
+<h1 id="markdown">Markdown</h1>
+<h2 id="blockquote">Blockquote</h2>
+<p>Quote with Markdown syntax:</p>
+<blockquote>
+<p>The roots of education are bitter, but the fruit is sweet.</p>
+<p>Said Aristotle, probably.</p>
+</blockquote>
+<p>Quote with Zola shortcode:</p>
+<div class="epigraph">
+	<blockquote>
+		<p>The determination to win is the better part of winning.</p>
+
+		<footer>
+			<cite><p>― Daisaku Ikeda</p>
+</cite>
+		</footer>
+	</blockquote>
+</div>
+<div class="epigraph">
+	<blockquote>
+		<p>Many web sites use Cloudflare to filter access. The goal of preventing DDS attacks is not in itself bad, but Cloudflare does bad things to each legitimate visitor:</p>
+<ul>
+<li>It determine’s the visitor’s location based on per IP address. (Using a proxy can thwart this.) Tracking people is unjust.</li>
+<li>It acts as a man-in-the-middle in encrypted (HTTPS) communication between the visitor and the site: Cloudflare knows what page the visitor is looking at and sees any other communication as well.</li>
+</ul>
+
+		<footer>
+			<cite><p>― <a href="https://stallman.org/cloudflare.html">Richard Stallman</a></p>
+</cite>
+		</footer>
+	</blockquote>
+</div>
+<hr />
+<h2 id="list-items">List Items</h2>
+<ol>
+<li>First order list item</li>
+<li>Second item</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<hr />
+<h2 id="code-blocks">Code Blocks</h2>
+<p>With <code>&lt;pre&gt;</code> tag:</p>
+<pre>
+var s = "JavaScript syntax highlighting";
+alert(s);
+</pre>
+<p>In Duckquill, the Markdown code blocks (<code>```</code>) should indicate the used language AND have a copy button on the right.</p>
+<pre data-lang="js" style="background-color:#232525;color:#a9b7c6;" class="language-js "><code class="language-js" data-lang="js"><span style="background-color:#00000000;color:#cc782f;">var</span><span> </span><span style="color:#9876aa;">s </span><span style="background-color:#00000000;color:#cc7832;">=</span><span> &quot;</span><span style="color:#759254;">JavaScript syntax highlighting</span><span>&quot;;
+</span><span style="color:#ffb64e;">alert</span><span>(</span><span style="color:#9876aa;">s</span><span>);
+</span></code></pre>
+<pre data-lang="js" style="background-color:#232525;color:#a9b7c6;" class="language-js "><code class="language-js" data-lang="js"><span>setTimeout(</span><span style="background-color:#00000000;color:#cc782f;">function</span><span> () { </span><span style="color:#ffb64e;">alert</span><span>(&quot;</span><span style="color:#759254;">JavaScript</span><span>&quot;); }, </span><span style="color:#6897bb;">1000</span><span>);
+</span></code></pre>
+<pre data-linenos data-lang="python" style="background-color:#232525;color:#a9b7c6;" class="language-python "><code class="language-python" data-lang="python"><table><tbody><tr><td>1</td><td><span>test_var </span><span style="background-color:#00000000;color:#cc7832;">=</span><span> &#39;</span><span style="color:#759254;">Python syntax highlighting</span><span>&#39;
+</span></td></tr><tr><td>2</td><td><span>print(test_var)
+</span></td></tr><tr><td>3</td><td><span>
+</span></td></tr><tr><td>4</td><td><span style="background-color:#00000000;color:#cc7832;">for</span><span> idx, val </span><span style="background-color:#00000000;color:#cc7832;">in</span><span> range(len(test_var)):
+</span></td></tr><tr><td>5</td><td><span>    print(</span><span style="background-color:#00000000;color:#cc782f;">f</span><span>&#39;{idx}</span><span style="color:#759254;"> :: </span><span>{val}&#39;)  </span><span style="font-style:italic;color:#60a160;">#</span><span style="font-style:italic;color:#666666;"> Wrong highlighting!
+</span></td></tr><tr><td>6</td><td><span>
+</span></td></tr><tr><td>7</td><td><span>
+</span></td></tr><tr><td>8</td><td><span style="background-color:#00000000;color:#cc7832;">def</span><span> </span><span style="color:#ffb64e;">is_it_cool</span><span>() -&gt; bool:
+</span></td></tr><tr><td>9</td><td><span>    </span><span style="font-style:italic;color:#60a160;">&quot;&quot;&quot;
+</span></td></tr><tr><td>10</td><td><span style="font-style:italic;color:#666666;">    Some method docstring...
+</span></td></tr><tr><td>11</td><td><span style="font-style:italic;color:#666666;">    
+</span></td></tr><tr><td>12</td><td><span style="font-style:italic;color:#666666;">    :return: Until it is perfect, False!
+</span></td></tr><tr><td>13</td><td><span style="font-style:italic;color:#666666;">    </span><span style="font-style:italic;color:#60a160;">&quot;&quot;&quot;
+</span></td></tr><tr><td>14</td><td><span>    </span><span style="background-color:#00000000;color:#cc7832;">return</span><span> </span><span style="color:#cc7832;">False
+</span></td></tr></tbody></table></code></pre>
+<pre data-linenos data-lang="shell" style="background-color:#232525;color:#a9b7c6;" class="language-shell "><code class="language-shell" data-lang="shell"><table><tbody><tr><td>1</td><td><span># This code block uses, in a nutSHELL (via comma), several extra settings:
+</span></td></tr><tr><td><mark style="background-color:#323232;">3</mark></td><td><mark style="background-color:#323232;"><span>- lineos
+</span></mark></td></tr><tr><td><mark style="background-color:#323232;">4</mark></td><td><mark style="background-color:#323232;"><span>- linenostart=10
+</span></mark></td></tr><tr><td>5</td><td><span>- hl_lines=3-4 8-9
+</span></td></tr><tr><td>6</td><td><span>- hide_lines=2 7
+</span></td></tr></tbody></table></code></pre>
+<pre data-linenos data-lang="scss" style="background-color:#232525;color:#a9b7c6;" class="language-scss "><code class="language-scss" data-lang="scss"><table><tbody><tr><td>10</td><td><span style="color:#cc6b2e;">pre mark </span><span>{
+</span></td></tr><tr><td>11</td><td><span>  </span><span style="font-style:italic;color:#60a160;">//</span><span style="font-style:italic;color:#666666;"> If you want your highlights to take the full width
+</span></td></tr><tr><td><mark style="background-color:#323232;">12</mark></td><td><mark style="background-color:#323232;"><span>  display: block;
+</span></mark></td></tr><tr><td><mark style="background-color:#323232;">13</mark></td><td><mark style="background-color:#323232;"><span>  color: currentcolor;
+</span></mark></td></tr><tr><td>14</td><td><span>}
+</span></td></tr><tr><td>15</td><td><span style="color:#cc6b2e;">pre table td</span><span>:nth-of-type(</span><span style="color:#6897bb;">1</span><span>) {
+</span></td></tr><tr><td>16</td><td><span>  </span><span style="font-style:italic;color:#60a160;">//</span><span style="font-style:italic;color:#666666;"> Select a colour matching your theme
+</span></td></tr><tr><td><mark style="background-color:#323232;">17</mark></td><td><mark style="background-color:#323232;"><span>  color: #</span><span style="color:#9876aa;">6b6b6b</span><span>;
+</span></mark></td></tr><tr><td><mark style="background-color:#323232;">18</mark></td><td><mark style="background-color:#323232;"><span>  font-style: italic;
+</span></mark></td></tr><tr><td>19</td><td><span>}
+</span></td></tr></tbody></table></code></pre>
+<hr />
+<h2 id="table">Table</h2>
+<h3 id="table-1-with-alignment">Table 1: With Alignment</h3>
+<table><thead><tr><th>Tables</th><th style="text-align: center">for</th><th style="text-align: right">Markdown</th></tr></thead><tbody>
+<tr><td>col 3 is</td><td style="text-align: center">right-aligned</td><td style="text-align: right">ok?</td></tr>
+<tr><td>col 2 is</td><td style="text-align: center">centered</td><td style="text-align: right">Got it?</td></tr>
+<tr><td>col 1 is</td><td style="text-align: center">left-aligned</td><td style="text-align: right">Alright!!!</td></tr>
+</tbody></table>
+<h3 id="table-2-with-typography-elements">Table 2: With Typography Elements</h3>
+<table><thead><tr><th>Another</th><th>table</th><th>here</th></tr></thead><tbody>
+<tr><td><em>I</em></td><td><code>am</code></td><td><strong>row</strong></td></tr>
+<tr><td>1</td><td>two</td><td>III</td></tr>
+</tbody></table>
+<hr />
+<h2 id="horizontal-line">Horizontal Line</h2>
+<p>The HTML <code>&lt;hr&gt;</code> element is for creating a “thematic break” between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
+<ul>
+<li><code>___</code>: three consecutive underscores</li>
+<li><code>---</code>: three consecutive dashes</li>
+<li><code>***</code>: three consecutive asterisks</li>
+</ul>
+<p>renders to:</p>
+<hr />
+<hr />
+<hr />
+<br>
+<h1 id="custom">Custom</h1>
+<h2 id="sidenotes">Sidenotes</h2>
+<p>Instead of footnotes, I’ve decided to focus more on the concept of <em>sidenotes</em> from Edward Tufte.
+I don’t really want the whole scientific R-Markdown pacakge, but I find most web-sites lack such feature.</p>
+<p>Sidenotes are basically footnotes but <strong>right</strong> near the text.
+Let’s check if inline sidenotes works.<label class="margin-toggle sidenote-number" for="sn-inline"></label>
+<input id="sn-inline" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote"><strong>Bold</strong> move!</span>
+
+
+If you see some <strong>bold</strong> on the right, then it is!</p>
+<p>Now let’s check if a multi-line body will work!
+<label class="margin-toggle sidenote-number" for="sn-sidenote-md-list-example"></label>
+<input id="sn-sidenote-md-list-example" class="margin-toggle" type="checkbox" />
+
+</p>
+<span class="sidenote">Here starts our multi-line sidenote body…
+It can be a list:</p>
+<ul>
+<li>one</li>
+<li>two
+<ul>
+<li>two and a half
+WTF? Why doesn’t it work inline?</li>
+</ul>
+</li>
+</ul>
+</span>
+<p>
+
+</p>
+<p>Let’s check if sidenotes work inline, w/o creating a new paragraph (<code>&lt;p&gt;...&lt;/p&gt;</code>): <label class="margin-toggle sidenote-number" for="sn-123"></label>
+<input id="sn-123" class="margin-toggle" type="checkbox" />
+
+</p>
+<span class="sidenote">This sidenote should be inline!
+But can it be a code block?</p>
+<pre data-lang="python" style="background-color:#232525;color:#a9b7c6;" class="language-python "><code class="language-python" data-lang="python"><span>print(&#39;</span><span style="color:#759254;">Apparently so!</span><span>&#39;)
+</span></code></pre>
+<p>What about a quote?</p>
+<blockquote>
+<p>Yes!</p>
+</blockquote>
+</span>
+<p>
+
+</p>
+<p>Instead of using footnotes on “the bottom of the page” Tufte-CSS suggests show them on the right of the text.
+Just like you’d probably do in your notebook.</p>
+<h2 id="margin-notes">Margin Notes</h2>
+<h3 id="in-line">In-Line</h3>
+<p>This is a sentence with a<label class="margin-toggle" for="mn-mn-example">&#8853;</label>
+<input id="mn-mn-example" class="margin-toggle" type="checkbox" />
+
+
+<span class="marginnote"><strong>margin note</strong> here.</span>
+
+ And it continues.</p>
+<h3 id="per-line">Per-Line</h3>
+<p>This is a sentence with a
+<label class="margin-toggle" for="mn-mn-example">&#8853;</label>
+<input id="mn-mn-example" class="margin-toggle" type="checkbox" />
+
+
+<span class="marginnote"><strong>margin note</strong> here.</span>
+
+
+And it continues.</p>
+<h3 id="multi-line">Multi-Line</h3>
+<p>This is a sentence with a multi-line Markdown marginnote.
+<label class="margin-toggle" for="mn-mn-example">&#8853;</label>
+<input id="mn-mn-example" class="margin-toggle" type="checkbox" />
+
+
+</p><span class="marginnote"><p>Should support:</p>
+<ul>
+<li>a list</li>
+<li>code block</li>
+</ul>
+<pre data-lang="python" style="background-color:#232525;color:#a9b7c6;" class="language-python "><code class="language-python" data-lang="python"><span>print(&#39;</span><span style="color:#759254;">It does!</span><span>&#39;)
+</span></code></pre>
+</span><p>
+
+
+It should be on the right, as always.</p>
+<h3 id="the-usual-way">The Usual Way</h3>
+<p>This is a sentence with a</p>
+<label class="margin-toggle" for="mn-mn-example">&#8853;</label>
+<input id="mn-mn-example" class="margin-toggle" type="checkbox" />
+
+
+</p><span class="marginnote"><p><strong>margin note</strong> here.</p>
+</span><p>
+
+<p>And it continues.</p>
+<h2 id="footnotes-list">Footnotes / List</h2>
+<p>Placing the <code>footnote-definition</code> class (e.g., for <code>&lt;div&gt;</code>) will have the same Markdown syntax as footnotes.
+If you have some text that you want to refer with a footnote, do as follows. This is an example for the footnote number one <sup class="footnote-reference"><a href="#1">1</a></sup>.
+Add more footnotes, with link. <sup class="footnote-reference"><a href="#2">2</a></sup> he</p>
+<p>And the list goes here:</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>Footnote number one.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>A footnote you can link to — <a href="#">click here!</a></p>
+</div>
+<pre data-lang="markdown" style="background-color:#232525;color:#a9b7c6;" class="language-markdown "><code class="language-markdown" data-lang="markdown"><span>[^2]: A footnote you can link to --- [click here!](#)
+</span></code></pre>
+<h2 id="media">Media</h2>
+<h3 id="invidious-embedded-iframe"><a href="https://invidious.io">Invidious</a> <label class="margin-toggle sidenote-number" for="sn-invidious"></label>
+<input id="sn-invidious" class="margin-toggle" type="checkbox" />
+
+<span class="sidenote"><abbr title="Free (Libre) and Open Source Software">FOSS</abbr> YouTube front-end with no telemetry from Big Tech.</span>
+
+ Embedded Iframe</h3>
+<iframe id='ivplayer' width='640' height='360' src='https://inv.nadeko.net/embed/43XaZEn2aLc?t=2864' style='border:none;'></iframe>
+<br>
+<h3 id="image">Image</h3>
+<p><img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-5.jpg" alt="Image" />
+Image Source: <a href="https://wonderfulengineering.com/">WonderfulEngineering.com</a></p>
+<img
+		class="full-bleed"src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;2&#x2F;24&#x2F;Male_mallard_duck_2.jpg&#x2F;800px-Male_mallard_duck_2.jpg"/><h1 id="extra-features">Extra Features</h1>
+<h2 id="katex">KaTeX</h2>
+<p>Display: $$f(x) = \int_{-\infty}^\infty\hat{f}(\xi),e^{2 \pi i \xi x},d\xi$$</p>
+<p>Inline: $\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi),e^{2 \pi i \xi x},d\xi$</p>
+<blockquote class="note">
+	<p class="alert-title">
+		<i class="icon"></i>Note</p>
+	<p>Since it crashes the whole page in Chromium-based browsers, I decided to turn it off for now.</p>
+<p>Probably related:</p>
+<ul>
+<li><a href="https://github.com/KaTeX/KaTeX/issues/2793">https://github.com/KaTeX/KaTeX/issues/2793</a></li>
+<li><a href="https://issues.chromium.org/issues/40087608">https://issues.chromium.org/issues/40087608</a></li>
+</ul>
+
+</blockquote>
+<h2 id="github-alerts">GitHub Alerts</h2>
+<blockquote>
+<p>[!NOTE]
+Useful information that users should know, even when skimming content.</p>
+</blockquote>
+<blockquote>
+<p>[!TIP]
+Helpful advice for doing things better or more easily.</p>
+</blockquote>
+<blockquote>
+<p>[!IMPORTANT]
+Key information users need to know to achieve their goal.</p>
+</blockquote>
+<blockquote>
+<p>[!WARNING]
+Urgent info that needs immediate user attention to avoid problems.</p>
+</blockquote>
+<blockquote>
+<p>[!CAUTION]
+Advises about risks or negative outcomes of certain actions.</p>
+</blockquote>
+<h3 id="github-flavoured-alerts">GitHub-flavoured Alerts</h3>
+<blockquote class="note">
+	<p class="alert-title">
+		<i class="icon"></i>Note</p>
+	<p>Note alert text</p>
+
+</blockquote>
+<blockquote class="tip">
+	<p class="alert-title">
+		<i class="icon"></i>Tip</p>
+	<p>Tip alert text</p>
+
+</blockquote>
+<blockquote class="important">
+	<p class="alert-title">
+		<i class="icon"></i>Important</p>
+	<p>Important alert text</p>
+
+</blockquote>
+<blockquote class="warning">
+	<p class="alert-title">
+		<i class="icon"></i>Warning</p>
+	<p>Warning alert text</p>
+
+</blockquote>
+<blockquote class="caution">
+	<p class="alert-title">
+		<i class="icon"></i>Caution</p>
+	<p>Caution alert text</p>
+
+</blockquote>
+<h2 id="mermaid-diagrams">Mermaid Diagrams</h2>
+<p>Code block based MermaidJS:</p>
+<pre data-lang="mermaid" style="background-color:#232525;color:#a9b7c6;" class="language-mermaid "><code class="language-mermaid" data-lang="mermaid"><span>---
+</span><span>config:
+</span><span>  layout: elk
+</span><span>  look: handDrawn
+</span><span>  theme: dark
+</span><span>---
+</span><span>sequenceDiagram
+</span><span>    autonumber
+</span><span>
+</span><span>    actor user as User
+</span><span>    participant client as Front
+</span><span>    participant api as API
+</span><span>    participant back as Backend
+</span><span>    participant service as Worker
+</span><span>
+</span><span>    %% Request a new config...
+</span><span>    user -&gt;&gt; client: click a button
+</span><span>
+</span><span>    client -&gt;&gt; client: generate security keys
+</span><span>    client  -&gt;&gt; api: GET /auth
+</span><span>    break limit&#39;s exceeded
+</span><span>        api --&gt;&gt; client: return error
+</span><span>        client --&gt;&gt; user: show error
+</span><span>    end
+</span><span>    api -&gt;&gt; api: new session for Client
+</span><span>
+</span><span>    api -&gt;&gt;+ back: sends Client&#39;s security meta
+</span><span>    back -&gt;&gt; back: process data
+</span><span>    back -&gt;&gt; service: add new instance
+</span><span>    back --&gt;&gt;- api: return slot
+</span><span>
+</span><span>    api --&gt;&gt; client: return generated config (base64)
+</span><span>    par Return Config
+</span><span>        client --&gt;&gt; user: established connection
+</span><span>    and Delete Old Meta
+</span><span>        api -&gt;&gt; api: revoke oldest Meta
+</span><span>        api -&gt;&gt; back: remove Instance
+</span><span>        back --&gt;&gt; api: confirm Instance is deleted
+</span><span>    end
+</span></code></pre>
+<p>Shortcode-based MermaidJS:
+<pre class="mermaid">
+    ---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+sequenceDiagram
+    autonumber
+
+    actor user as User
+    participant client as Front
+    participant api as API
+    participant back as Backend
+    participant service as Worker
+
+    %% Request a new config...
+    user ->> client: click a button
+
+    client ->> client: generate security keys
+    client  ->> api: GET /auth
+    break limit's exceeded
+        api -->> client: return error
+        client -->> user: show error
+    end
+    api ->> api: new session for Client
+
+    api ->>+ back: sends Client's security meta
+    back ->> back: process data
+    back ->> service: add new instance
+    back -->>- api: return slot
+
+    api -->> client: return generated config (base64)
+    par Return Config
+        client -->> user: established connection
+    and Delete Old Meta
+        api ->> api: revoke oldest Meta
+        api ->> back: remove Instance
+        back -->> api: confirm Instance is deleted
+    end
+</pre>
+</p>
+
+</article><hr />
+	<nav id="post-nav"><a class="post-nav-item post-nav-next" href="https:&#x2F;&#x2F;yakshi.uno&#x2F;blog&#x2F;on-email-providers&#x2F;">
+				<div class="nav-arrow">Next</div>
+				<span class="post-title">On E-mail Providers</span>
+			</a></nav>
+		
+	<span id="copy-code-text" class="hidden">Copy Code</span>
+
+	</main>
+	<footer id="site-footer">
+</footer>
+
+
+</body>
+</html>
